@@ -1,0 +1,181 @@
+#header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #eee;
+}
+#header #logo-name {
+  display: flex;
+  align-items: center;
+}
+#header #logo-name #header-img {
+  padding: 7px;
+  height: 70px;
+  display: flex;
+}
+#header #logo-name #company-name {
+  font-size: 1.8em;
+  color: #333;
+  display: flex;
+  white-space: nowrap;
+}
+#header #nav-bar {
+  display: flex;
+}
+#header #nav-bar .ul-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#header #nav-bar .ul-container .nav-link {
+  display: flex;
+  color: #333;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+@media (max-width: 1024px) {
+  #header {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* html,
+* body {
+  font-family: "Open Sans", "Trebuchet MS", Helvetica, sans-serif;
+  text-align: center;
+  min-width: 320px;
+  background: linear-gradient(90deg, #d6596a, #4f3271);
+}
+* html #form,
+* body #form {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 120px;
+}
+* html #form #form-h1,
+* body #form #form-h1 {
+  font-weight: 100;
+  color: #fff;
+}
+* html #form #email,
+* body #form #email {
+  height: 30px;
+  width: 280px;
+  padding: 5px;
+  margin: 20px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+}
+* html #form #submit,
+* body #form #submit {
+  background-color: #ff6565;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 110px;
+  margin: 5px;
+  border: 0px solid;
+  cursor: pointer;
+}
+* html #form #submit #submit:hover,
+* body #form #submit #submit:hover {
+  background-color: #5a1f70;
+  box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.3);
+  transition: background-color 1s, box-shadow 1s;
+}
+* html .container,
+* body .container {
+  width: 100%;
+  margin: 70px auto;
+}
+* html .container .grid-header,
+* body .container .grid-header {
+  color: #fff;
+}
+* html .container .grid-header .grid-header > h1,
+* body .container .grid-header .grid-header > h1 {
+  font-weight: 100;
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+* html .container .grid-header .grid-header > h1 > span,
+* body .container .grid-header .grid-header > h1 > span {
+  color: #4676fa;
+  font-weight: 100;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.7, 0.7);
+  }
+  to {
+    opacity: 1;
+  }
+  to .fade-in-element {
+    animation: fade-in 1.4s;
+    width: 100%;
+    margin-top: 50px;
+    color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  to .fade-in-element .hidden-grid {
+    width: 100%;
+    margin-top: 50px;
+    color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    opacity: 0;
+  }
+  to .fade-in-element .item-box {
+    width: 26%;
+    margin-bottom: 40px;
+    padding: 15px;
+    text-align: center;
+  }
+  to .fade-in-element .item-box .item-box:hover {
+    background-color: #c43865;
+    border: 0px solid;
+    border-radius: 4px;
+    box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s, box-shadow 0.5s;
+  }
+  to .fade-in-element .item-box .item-box:hover .icon {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    border: 1px solid #6854ff;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  to .fade-in-element .item-box .item-box:hover .icon .img-icon {
+    width: 40px;
+    height: 40px;
+  }
+}

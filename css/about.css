@@ -1,0 +1,55 @@
+#header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #eee;
+}
+#header #logo-name {
+  display: flex;
+  align-items: center;
+}
+#header #logo-name #header-img {
+  padding: 7px;
+  height: 70px;
+  display: flex;
+}
+#header #logo-name #company-name {
+  font-size: 1.8em;
+  color: #333;
+  display: flex;
+  white-space: nowrap;
+}
+#header #nav-bar {
+  display: flex;
+}
+#header #nav-bar .ul-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#header #nav-bar .ul-container .nav-link {
+  display: flex;
+  color: #333;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+@media (max-width: 1024px) {
+  #header {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+body {
+  font-family: "Open Sans", "Trebuchet MS", Helvetica, sans-serif;
+  text-align: center;
+  min-width: 320px;
+  background: linear-gradient(90deg, #d6596a, #4f3271);
+}
